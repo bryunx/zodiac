@@ -2,15 +2,38 @@
 <html>
 	<head>
 	<title>Horoscope</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css"></link>
+	<link rel="stylesheet" href="css/animate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<form>
-			<h1>Enter your Zodiac Sign or Chinese Animal</h1>
-			<input id="sign" id="horoscope sign">
+		<form id="myForm">
+			<h1 class="header animated jello">Horoscope</h1>
+			<label>Zodiac</label>
+			<input id="sign" placeholder="Type zodiac sign">
 			<button type="button" onclick="getInfo()">Click Me</button>
+				<br>
+			<label>Animal</label>
+			<input id="animal" placeholder="Type chinese animal">
+			<button type="button" onclick="animalInfo()">Click Me</button>
+				<br>
+			<div id="month">
+				<label>Birth Month</label>
+				<input id="birthmonth" placeholder="Type birth month">
+				<button type="button" onclick="birthInfo()">Click Me</button>
+			</div>
+		</div>
+		<!-- <div id="reset">
+			<input type="button" onclick="myFunction()" value="Reset">
+		</div> -->
+			<div id="allsigns"></div>
 		</form>
-		<script src=js/main.js></script>
+		<!-- <button onclick="clearBox('cart_item')" /> -->
+		<img id="image">
+		<!-- javascript -->
+		<script src="js/main.js"></script>
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+		</script>
 	</body>
-
 </html>
